@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { MapPin, Phone, Search, CheckCircle2, HelpCircle, Clock, Truck, ShieldCheck } from 'lucide-react';
-import { ZONES, BUSINESS } from '../data.js';
+import { ZONES, BUSINESS, IMG } from '../data.js';
 import { PageBanner, CtaBand, Reveal, Icon, SectionHead, useTitle } from '../components/ui.jsx';
 
 function lookup(q) {
@@ -27,7 +27,7 @@ export default function Areas() {
 
   return (
     <>
-      <PageBanner tall title="Areas we cover" text="Local vans across Bradford and the surrounding West Yorkshire towns." crumbs={[{ label: 'Areas' }]} />
+      <PageBanner tall image={IMG.door} title="Areas we cover" text="Local vans across Bradford and the surrounding West Yorkshire towns." crumbs={[{ label: 'Areas' }]} />
 
       <div className="wrap">
         <div className="checker">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, MessageCircle, Check } from 'lucide-react';
-import { BUSINESS, SERVICES } from '../data.js';
+import { BUSINESS, SERVICES, IMG } from '../data.js';
 import { PageBanner, useTitle } from '../components/ui.jsx';
 
 export default function Contact() {
@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <>
-      <PageBanner title="Contact us" text="Call for emergencies. For anything else, send a message and we will get back to you." crumbs={[{ label: 'Contact' }]} />
+      <PageBanner image={IMG.antisnap} title="Contact us" text="Call for emergencies. For anything else, send a message and we will get back to you." crumbs={[{ label: 'Contact' }]} />
       <section className="section">
         <div className="wrap contact">
           <div>

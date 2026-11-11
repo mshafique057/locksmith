@@ -85,9 +85,10 @@ export function SectionHead({ eyebrow, title, lead, center = true, children }) {
   );
 }
 
-export function PageBanner({ title, text, crumbs = [], tall = false }) {
+export function PageBanner({ title, text, crumbs = [], tall = false, image }) {
   return (
     <section className="banner" style={tall ? { paddingBottom: 'clamp(110px, 12vw, 150px)' } : undefined}>
+      {image && <div className="banner-img" style={{ backgroundImage: `url(${image})` }} aria-hidden="true" />}
       <div className="wrap hero-up">
         <div className="crumbs">
           <Link to="/">Home</Link>

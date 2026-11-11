@@ -13,7 +13,7 @@ export default function ServiceDetail() {
 
   return (
     <>
-      <PageBanner title={s.title} text={s.short} crumbs={[{ label: 'Services', to: '/services' }, { label: s.title }]} />
+      <PageBanner image={s.image} title={s.title} text={s.short} crumbs={[{ label: 'Services', to: '/services' }, { label: s.title }]} />
       <section className="section">
         <div className="wrap detail">
           <div>

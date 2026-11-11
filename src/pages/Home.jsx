@@ -5,6 +5,7 @@ import { BUSINESS, IMG, SERVICES, PROBLEMS, PROMISES, REVIEWS, AREAS, FAQS } fro
 import { Icon, Reveal, Counter, Stars, SectionHead, CtaBand, useTitle } from '../components/ui.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 import FaqList from '../components/FaqList.jsx';
+import HeroSlider from '../components/HeroSlider.jsx';
 
 export default function Home() {
   useTitle('Bradford Locksmith Pro 24/7 | Home Locksmith in Bradford', 'Local residential locksmith in Bradford. Lockouts, lost and snapped keys, uPVC door and window lock repair and anti-snap upgrades. 24/7, fixed prices.');
@@ -13,24 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: `url(${IMG.door})` }} />
-        <div className="wrap hero-up">
-          <span className="pill"><i className="dot" /> Available now across Bradford</span>
-          <h1>Back inside, <em>safely.</em> Your local home locksmith, day or night.</h1>
-          <p className="lead">Locked out, lost a key or a door that will not lock? We repair and secure the front doors, back doors and windows of Bradford homes, with a fixed price agreed before we arrive.</p>
-          <div className="hero-actions">
-            <a className="btn btn-primary" href={BUSINESS.phoneHref}><Phone size={19} /> Call {BUSINESS.phone}</a>
-            <a className="btn btn-ghost" href={BUSINESS.whatsappHref}><MessageCircle size={19} /> WhatsApp us</a>
-          </div>
-          <div className="chips">
-            <span className="chip"><Clock size={18} /> {BUSINESS.response} response</span>
-            <span className="chip"><PoundSterling size={18} /> Fixed upfront price</span>
-            <span className="chip"><BadgeCheck size={18} /> DBS checked &amp; insured</span>
-            <span className="chip"><ShieldCheck size={18} /> 12-month guarantee</span>
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       <section className="stats">
         <div className="wrap">

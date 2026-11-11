@@ -43,7 +43,7 @@ export function Header() {
             ))}
           </nav>
           <div className="header-cta">
-            <a className="btn btn-dark btn-sm" href={BUSINESS.phoneHref}><Phone size={17} /> {BUSINESS.phone}</a>
+            <a className="btn btn-primary btn-sm" href={BUSINESS.phoneHref}><Phone size={17} /> {BUSINESS.phone}</a>
             <button className="burger" aria-label="Open menu" onClick={() => setOpen(true)}><Menu size={22} /></button>
           </div>
         </div>

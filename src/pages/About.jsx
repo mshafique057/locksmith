@@ -7,7 +7,7 @@ export default function About() {
   useTitle('About Us | Bradford Locksmith Pro', 'Meet Bradford Locksmith Pro: a dedicated residential locksmith for Bradford homes, with honest prices and tidy, guaranteed work.');
   return (
     <>
-      <PageBanner title="About Bradford Locksmith Pro" text="A local locksmith focused entirely on the doors and windows of people's homes." crumbs={[{ label: 'About' }]} />
+      <PageBanner image={IMG.window} title="About Bradford Locksmith Pro" text="A local locksmith focused entirely on the doors and windows of people's homes." crumbs={[{ label: 'About' }]} />
       <section className="section">
         <div className="wrap split">
           <Reveal className="split-img"><img src={IMG.window} alt="Locksmith repairing a window lock" loading="lazy" /></Reveal>
