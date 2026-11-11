@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   DoorOpen, KeyRound, Wrench, ShieldCheck, AppWindow, LockKeyhole, KeySquare, ShieldAlert,
-  Clock, PoundSterling, BadgeCheck, Lock, Star, Phone
+  Clock, PoundSterling, BadgeCheck, Lock, Star, Phone, Building2, Trees, Home, MapPinned
 } from 'lucide-react';
 import { BUSINESS } from '../data.js';
 
-const ICONS = { DoorOpen, KeyRound, Wrench, ShieldCheck, AppWindow, LockKeyhole, KeySquare, ShieldAlert, Clock, PoundSterling, BadgeCheck, Lock };
+const ICONS = { DoorOpen, KeyRound, Wrench, ShieldCheck, AppWindow, LockKeyhole, KeySquare, ShieldAlert, Clock, PoundSterling, BadgeCheck, Lock, Building2, Trees, Home, MapPinned };
 
 export function Icon({ name, size = 24, ...rest }) {
   const C = ICONS[name] || Lock;
@@ -85,9 +85,9 @@ export function SectionHead({ eyebrow, title, lead, center = true, children }) {
   );
 }
 
-export function PageBanner({ title, text, crumbs = [] }) {
+export function PageBanner({ title, text, crumbs = [], tall = false }) {
   return (
-    <section className="banner">
+    <section className="banner" style={tall ? { paddingBottom: 'clamp(110px, 12vw, 150px)' } : undefined}>
       <div className="wrap hero-up">
         <div className="crumbs">
           <Link to="/">Home</Link>

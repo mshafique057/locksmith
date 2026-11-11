@@ -244,32 +244,56 @@ export const PROBLEMS = [
   }
 ];
 
-export const AREAS = [
-  { name: 'Manningham', code: 'BD8' },
-  { name: 'Girlington', code: 'BD8' },
-  { name: 'Heaton', code: 'BD9' },
-  { name: 'Frizinghall', code: 'BD9' },
-  { name: 'Eccleshill', code: 'BD2' },
-  { name: 'Idle', code: 'BD10' },
-  { name: 'Thackley', code: 'BD10' },
-  { name: 'Undercliffe', code: 'BD3' },
-  { name: 'Great Horton', code: 'BD7' },
-  { name: 'Wibsey', code: 'BD6' },
-  { name: 'Low Moor', code: 'BD12' },
-  { name: 'Wyke', code: 'BD12' },
-  { name: 'Clayton', code: 'BD14' },
-  { name: 'Allerton', code: 'BD15' },
-  { name: 'Thornton', code: 'BD13' },
-  { name: 'Queensbury', code: 'BD13' },
-  { name: 'Bingley', code: 'BD16' },
-  { name: 'Baildon', code: 'BD17' },
-  { name: 'Shipley', code: 'BD18' },
-  { name: 'Saltaire', code: 'BD18' },
-  { name: 'Cleckheaton', code: 'BD19' },
-  { name: 'Keighley', code: 'BD21' },
-  { name: 'Ilkley', code: 'LS29' },
-  { name: 'Halifax', code: 'HX1' }
+export const ZONES = [
+  {
+    id: 'city',
+    icon: 'Building2',
+    name: 'Bradford City & Inner Suburbs',
+    time: '20–40 min',
+    note: 'Our home patch, with vans based close by.',
+    areas: [
+      { name: 'City Centre', code: 'BD1' }, { name: 'Undercliffe', code: 'BD3' }, { name: 'Bowling', code: 'BD4' },
+      { name: 'Little Horton', code: 'BD5' }, { name: 'Great Horton', code: 'BD7' }, { name: 'Manningham', code: 'BD8' },
+      { name: 'Girlington', code: 'BD8' }, { name: 'Heaton', code: 'BD9' }, { name: 'Frizinghall', code: 'BD9' }
+    ]
+  },
+  {
+    id: 'north',
+    icon: 'Trees',
+    name: 'North & Aire Valley',
+    time: '30–50 min',
+    note: 'Villages and towns along the Aire.',
+    areas: [
+      { name: 'Eccleshill', code: 'BD2' }, { name: 'Idle', code: 'BD10' }, { name: 'Thackley', code: 'BD10' },
+      { name: 'Shipley', code: 'BD18' }, { name: 'Saltaire', code: 'BD18' }, { name: 'Baildon', code: 'BD17' },
+      { name: 'Bingley', code: 'BD16' }, { name: 'Keighley', code: 'BD21' }, { name: 'Ilkley', code: 'LS29' }
+    ]
+  },
+  {
+    id: 'south',
+    icon: 'Home',
+    name: 'South & West Bradford',
+    time: '30–50 min',
+    note: 'Estates, terraces and hillside villages.',
+    areas: [
+      { name: 'Wibsey', code: 'BD6' }, { name: 'Low Moor', code: 'BD12' }, { name: 'Wyke', code: 'BD12' },
+      { name: 'Clayton', code: 'BD14' }, { name: 'Allerton', code: 'BD15' }, { name: 'Thornton', code: 'BD13' },
+      { name: 'Queensbury', code: 'BD13' }, { name: 'Cleckheaton', code: 'BD19' }
+    ]
+  },
+  {
+    id: 'nearby',
+    icon: 'MapPinned',
+    name: 'Nearby West Yorkshire Towns',
+    time: '45–75 min',
+    note: 'Call first and we will confirm availability.',
+    areas: [
+      { name: 'Halifax', code: 'HX1' }, { name: 'Pudsey', code: 'LS28' }, { name: 'Leeds', code: 'LS1' }, { name: 'Huddersfield', code: 'HD1' }
+    ]
+  }
 ];
+
+export const AREAS = ZONES.flatMap((z) => z.areas);
 
 export const REVIEWS = [
   {

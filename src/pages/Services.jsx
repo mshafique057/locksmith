@@ -10,7 +10,7 @@ export default function Services() {
       <PageBanner title="Home locksmith services" text="Residential door and window lock help for houses, bungalows, flats and cottages across Bradford." crumbs={[{ label: 'Services' }]} />
       <section className="section">
         <div className="wrap">
-          <div className="grid g3">
+          <div className="grid g4">
             {SERVICES.map((s, i) => <ServiceCard key={s.slug} s={s} i={i} />)}
           </div>
         </div>

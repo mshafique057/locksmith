@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Menu, X, KeyRound, MessageCircle, ArrowUp, ChevronRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Menu, X, MessageCircle, ArrowUp, ChevronRight } from 'lucide-react';
 import { BUSINESS, NAV, SERVICES } from '../data.js';
+import Logo from './Logo.jsx';
 
 function Brand({ onClick }) {
   return (
     <Link to="/" className="brand" onClick={onClick} aria-label={BUSINESS.name}>
-      <span className="brand-mark"><KeyRound size={24} strokeWidth={1.8} /></span>
-      <span>
-        <b>{BUSINESS.name}</b>
-        <small>{BUSINESS.tagline}</small>
-      </span>
+      <Logo />
     </Link>
   );
 }
