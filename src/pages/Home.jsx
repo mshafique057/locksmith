@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section dark">
+      <section className="section tint">
         <div className="wrap">
           <SectionHead eyebrow="Our promise" title="Straightforward, trustworthy, local" lead="Four things you can expect every time we come to your home." />
           <div className="grid g4">

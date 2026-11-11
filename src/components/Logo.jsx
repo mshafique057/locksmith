@@ -11,8 +11,8 @@ export function LogoMark({ size = 52 }) {
           <stop offset="1" stopColor="#c9983a" />
         </linearGradient>
         <linearGradient id={`n${id}`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#2f63aa" />
-          <stop offset="1" stopColor="#163a6b" />
+          <stop offset="0" stopColor="#3c465c" />
+          <stop offset="1" stopColor="#1f2430" />
         </linearGradient>
       </defs>
       <path d="M24 2 44 9v19c0 12-9 22-20 26C13 50 4 40 4 28V9z" fill={`url(#n${id})`} stroke={`url(#g${id})`} strokeWidth="2.4" strokeLinejoin="round" />

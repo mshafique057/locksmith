@@ -2,7 +2,7 @@ import React from 'react';
 import { BadgeCheck, Clock, PoundSterling, ShieldCheck } from 'lucide-react';
 import { SERVICES, IMG } from '../data.js';
 import { PageBanner, CtaBand, useTitle } from '../components/ui.jsx';
-import ServiceRow from '../components/ServiceRow.jsx';
+import ServiceCard from '../components/ServiceCard.jsx';
 
 export default function Services() {
   useTitle('Home Locksmith Services in Bradford | Bradford Locksmith Pro', 'Lockout entry, lost keys, snapped key removal, uPVC door and window lock repair, anti-snap upgrades and break-in repairs for Bradford homes.');
@@ -17,8 +17,8 @@ export default function Services() {
             <span><BadgeCheck size={19} /> DBS checked &amp; insured</span>
             <span><ShieldCheck size={19} /> 12-month guarantee</span>
           </div>
-          <div className="grid g2">
-            {SERVICES.map((s, i) => <ServiceRow key={s.slug} s={s} i={i} />)}
+          <div className="grid g4">
+            {SERVICES.map((s, i) => <ServiceCard key={s.slug} s={s} i={i} />)}
           </div>
         </div>
       </section>

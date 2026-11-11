@@ -25,7 +25,7 @@ export default function About() {
           </Reveal>
         </div>
       </section>
-      <section className="section dark">
+      <section className="section tint">
         <div className="wrap">
           <SectionHead eyebrow="What we stand for" title="Our commitments" />
           <div className="grid g4">
